@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:weightSum="10" >
+
+    <ImageView
+        android:id="@+id/pay_type_item_img"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="8dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/pay_type_item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="bottom"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/pay_type_item_namedes"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="top"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pay_type_item_select"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/pay_type_item_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

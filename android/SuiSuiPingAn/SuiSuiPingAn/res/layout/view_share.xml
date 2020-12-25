@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#3d4955"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_icon_transparent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/caseT_share_title"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:gravity="center|bottom"
+                android:text="@string/title_string_one"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:gravity="center|top"
+                android:text="@string/title_string_two"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ico_yidong" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.3"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <ImageView
+            android:id="@+id/share_IMG"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/share_text_sharedes1"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <Button
+            android:id="@+id/share_BTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="10"
+            android:background="@drawable/btn_show"
+            android:text="@string/share_btn_share"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

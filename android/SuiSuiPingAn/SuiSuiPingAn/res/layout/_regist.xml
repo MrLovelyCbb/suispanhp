@@ -1,0 +1,220 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/regist_phonetext_1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/phone_imei_text"
+            android:textColor="@color/grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/regist_phonetext_2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/regist_phonetext_1"
+            android:gravity="center_vertical"
+            android:text=":"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/regist_phonetext_2"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/regist_imei"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/regist_imei_read"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_welcome_about_normal"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.02"
+        android:background="@color/grey" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1.5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="3.88"
+        android:background="@drawable/bg_edittext"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.95"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/_regist_name"
+                android:textColor="@color/grey" />
+
+            <com.tc.myview.MyEditText
+                android:id="@+id/regist_name"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="7"
+                android:background="@null"
+                android:hint="@string/regist_text_shuruname"
+                android:lines="1"
+                android:maxLength="5" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1"
+            android:background="#f0f0f0" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.95"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/_regist_phone"
+                android:textColor="@color/grey" />
+
+            <com.tc.myview.MyEditText
+                android:id="@+id/regist_phone"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="7"
+                android:background="@null"
+                android:hint="@string/regist_text_shuruphone"
+                android:lines="1"
+                android:maxLength="11"
+                android:numeric="integer" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1.5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1.6"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <Button
+            android:id="@+id/regist_retrurn"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_show2"
+            android:text="@string/regist_btn_retrun"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/regist_login"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_show2_2"
+            android:text="@string/regist_btn_login"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.5"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/black" />
+
+</LinearLayout>

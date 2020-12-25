@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bottom_holo_light"
+    android:cacheColorHint="#00000000"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/my_order_spinner_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/spinner_list_background"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/spinner_list_divider"
+        android:dividerHeight="1px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:listSelector="@drawable/my_spinner_list_set" >
+    </ListView>
+
+</LinearLayout>

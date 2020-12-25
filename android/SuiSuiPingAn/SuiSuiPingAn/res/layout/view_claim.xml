@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#3d4955"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_icon_transparent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/caseT_claim_title"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:gravity="center|bottom"
+                android:text="@string/title_string_one"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/caseT_claim_title2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:gravity="center|top"
+                android:text="@string/title_string_two"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ico_yidong" />
+    </LinearLayout>
+
+    <com.tc.myview.MyTextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.7"
+        android:gravity="center_vertical"
+        android:text="@string/claim_text_phone"
+        android:textColor="#646464" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1.4"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/claim_tel"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:gravity="center_vertical"
+                android:text="@string/claim_text_tel"
+                android:textColor="#5db300"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:text="@string/claim_text_time"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/claim_phone_IMG"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_phone_deal_detail" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.02"
+        android:background="@color/grey" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:text="@string/claim_text_wenti"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/claim_miaosu_EDIT"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="2.6"
+        android:gravity="top"
+        android:hint="@string/claim_edit_miaosu"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="2.0"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical|bottom"
+            android:text="@string/claim_text_lianxifangshi"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/claim_tel_EDIT"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:hint="@string/claim_edit_lianxifangshi"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="13"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical|bottom"
+            android:text="@string/claim_text_dizhi"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/claim_add_EDIT"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:hint="@string/claim_edit_dizhi"
+            android:lines="1"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/claim_xieyi"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:text="@string/spb_xieyi"
+        android:textColor="@drawable/text_select" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1.08"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <Button
+            android:id="@+id/claim_return_BTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_show2"
+            android:text="@string/claim_btn_cancel"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/claim_send_BTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_show2_2"
+            android:text="@string/claim_btn_send"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

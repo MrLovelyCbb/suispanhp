@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/btn_bottom2_off" android:state_focused="false" android:state_pressed="false"/>
+    <item android:drawable="@color/btn_bottom2_on" android:state_focused="false" android:state_pressed="true"/>
+
+</selector>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AABBBBBB"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.tc.myview.ProgressWheel
+                android:id="@+id/progressBar"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                ProgressWheel:barColor="#339BB9"
+                ProgressWheel:barLength="60dp"
+                ProgressWheel:barWidth="18dp"
+                ProgressWheel:rimColor="#44000000"
+                ProgressWheel:rimWidth="18dp"
+                ProgressWheel:spinSpeed="3dp"
+                ProgressWheel:text="Loading..."
+                ProgressWheel:textColor="#222222"
+                ProgressWheel:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

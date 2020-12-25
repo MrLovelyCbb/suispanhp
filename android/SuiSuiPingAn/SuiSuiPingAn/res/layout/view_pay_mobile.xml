@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:text="@string/pay_mobile_tip"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:text="@string/pay_mobile_info"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/pay_card_num"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="3"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:hint="@string/pay_edit_shuru"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="number"
+        android:lines="1"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pay_card_info"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:textColor="@color/aqua"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="9" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/pay_mobile_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:background="@drawable/btn_show2"
+            android:gravity="center"
+            android:text="暂不办理"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/pay_mobile_ok"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:background="@drawable/btn_show2_2"
+            android:gravity="center"
+            android:text="我要办理"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

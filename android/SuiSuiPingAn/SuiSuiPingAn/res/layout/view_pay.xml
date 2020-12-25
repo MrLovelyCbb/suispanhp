@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="#3d4955"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ic_icon_transparent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/caseT_Pay_title"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:gravity="center|bottom"
+                android:text="@string/title_string_one"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/caseT_Pay_title2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:gravity="center|top"
+                android:text="@string/title_string_two"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/ico_yidong" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pay_layout_title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2.3"
+        android:background="@drawable/textview_border"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="@string/pay_text_name"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pay_name"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:gravity="right|center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1"
+            android:background="#f0f0f0" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="@string/pay_text_price"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pay_price"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:gravity="right|center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pay_layout_xuanze_text"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="@string/pay_text_select" />
+
+    <ListView
+        android:id="@+id/pay_type_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="4"
+        android:background="@drawable/textview_border"
+        android:cacheColorHint="#00000000"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:weightSum="10" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <Button
+            android:id="@+id/pay_cancelBTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:background="@drawable/btn_show"
+            android:text="@string/regist_btn_retrun"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/pay_payBTN"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:background="@drawable/btn_show"
+            android:text="@string/pay_btn_pay"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pay_xieyi"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/login_text_xieyi"
+        android:textColor="@drawable/text_select" />
+
+</LinearLayout>

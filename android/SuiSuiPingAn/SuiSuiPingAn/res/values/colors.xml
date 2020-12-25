@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="TextColor">#FFFFFF</color>
+    <color name="bgColor">#000000</color>
+    <color name="spinner_list_background">#EFEFEF</color>
+    <color name="spinner_list_select">#7BCBEE</color>
+    <color name="spinner_list_divider">#D8D8D8</color>
+
+</resources>
